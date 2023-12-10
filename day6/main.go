@@ -77,6 +77,10 @@ func part2() {
 	fmt.Println("Time:", time, "Distance:", distance, "Wins:", winCount)
 }
 
+// countWins2 runs a binary search for the first value that wins
+// This is a hack as it turns out I could have used the quadratic equation that
+// gives the distance traveled for any hold time and solved for the time that
+// gives the distance
 func countWins2(time int, distance int) int {
 	// Pretend time is an array of integers from 1 to time
 	// Do a binary search for the first value that wins

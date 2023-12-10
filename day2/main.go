@@ -32,7 +32,7 @@ func part1(input []byte) {
 			sum += id
 		}
 	}
-	fmt.Printf("Sum: %d\n", sum)
+	fmt.Printf("Part 1: sum: %d\n", sum)
 }
 
 func part2(input []byte) {
@@ -44,7 +44,7 @@ func part2(input []byte) {
 		mr, mg, mb := minimums(reveals)
 		sum += mr * mg * mb
 	}
-	fmt.Printf("Sum: %d\n", sum)
+	fmt.Printf("Part2: sum: %d\n", sum)
 }
 
 func minimums(reveals []reveal) (int, int, int) {
