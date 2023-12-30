@@ -22,6 +22,22 @@ var sample = string(`...#......
 .......#..
 #...#.....`)
 
+/* Example Exapansion Ratio 2
+     0123456789                          	 0123456789012
+	0...#......      Galaxy at (0, 3)    	0...e#..e...e.   becomes Galaxy at (0, 4)
+	1.......#..      Galaxy at (1, 7)    	1...e...e.#.e.   becomes Galaxy at (1, 9)
+	2#.........                          	2#..e...e...e.
+	3..........                          	3...e...e...e.
+	4......#...      Galaxy at (4, 6)    	4eeeeeeeeeeeee
+	5.#........                          	5...e...e#..e.   becomes Galaxy at (5, 8)
+	6.........#                          	6.#.e...e...e.
+	7..........                          	7...e...e...e#
+	8.......#..                          	8...e...e...e.
+	9#...#.....                          	9eeeeeeeeeeeee
+										    10...e...e.#.e.
+										    11#..e.#.e...e.
+*/
+
 type Point struct {
 	x, y int
 }
